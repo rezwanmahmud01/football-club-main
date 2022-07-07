@@ -1,0 +1,391 @@
+/* Needed font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* common style or unitilities */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.read-more{
+    color: tomato;
+    cursor: pointer;
+}
+.read-more i{
+    font-size: 15px;
+}
+
+/*---------------------- 
+main content style part  
+------------------------*/
+main{
+    display: flex;
+    justify-content: center;
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+.container{
+    width: 1050px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 60px 0 85px 0;
+}
+.banner-title h1{
+    font-size: 64px;
+    line-height: 80px;
+    color: #ffff;
+    margin-bottom: 27px;
+}
+.banner-button a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 35px;
+    display: inline-block;
+    background-color: #E02C6D;
+    color: #ffff;
+    transform: scale(1);
+    transition: .8s ease-in-out;
+}
+.banner-button a:hover{
+    transform: scale(1.3);
+    border-radius: 10px;
+    background-color: #86103b;
+    letter-spacing: .07em;
+}
+
+
+/* banner image part  */
+
+
+.banner-image{
+    width: 556px;
+    height: 438px;
+    transition: .8s ease-in-out;
+}
+.banner:hover .banner-image{
+    transform: matrix(-1, 0, 0, 1, 0, 1);
+}
+.banner-image img{
+    max-width: 100%;
+}
+
+
+/*---------------------
+ players details style 
+ ----------------------*/
+
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+ .players{
+    width: 1050px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+ }
+ .player{
+     padding: 15px 15px 33px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px 10px 0 0;
+ }
+ .player-image img{
+     width: 100%;
+     border-radius: 10px 10px 0 0;
+ }
+ .player-name{
+     font-size: 28px;
+     font-weight: 700;
+     margin: 10px 0;
+ }
+ .player-description{
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 2em;
+     text-align: justify;
+ }
+
+
+ /* -------------------------------------
+ game report and highlights video style
+ ---------------------------------------- */
+ 
+
+ #report{
+     background-color: rgba(245, 244, 244, 0.534);
+     padding: 50px 0;
+     margin-bottom: 50px;
+ }
+ article{
+    display: flex;
+    justify-content: center;
+ }
+.report-container{
+    width: 1050px;
+}
+ .report-highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+ }
+.report-title h4{
+    color: #cccccc;
+    font-size: 20px;
+}
+.report-title h1{
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.report-result{
+    border: 1px solid #cccccc;
+    padding: 30px 20px 40px 20px;
+    text-align: center;
+}
+.report-result p{
+    color: #cccccc;
+    margin-bottom: 50px;
+}
+.report-result-container{
+    display: flex;
+    justify-content: space-between;
+}
+figcaption{
+    font-size: 15px;
+}
+#win-flag{
+    color: #ffb400;
+}
+#win{
+    text-decoration: underline;
+    text-decoration-color: #ffb400;
+}
+#defeat{
+    color: #cccccc;
+}
+.report-result-container h1{
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+.report-result a{
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    background-color: #ffb400;
+    padding: 10px 25px;
+}
+
+
+/* --------------------
+Hot news style 
+----------------------- */
+
+
+.news-main-section{
+    width: 1050px;
+}
+.news-main-title{
+    text-align: center;
+    font-size: 40px;
+    color: tomato;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.recent-news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.news-container{
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.news-image img{
+    width: 100%;
+}
+.news-date{
+    color: #ddd;
+    margin-bottom: 5px;
+}
+.news-tatle{
+    margin-bottom: 5px;
+}
+.news-description{
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.author a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+}
+
+
+/* ----------
+footer part 
+------------- */
+
+
+.main-footer{
+    padding: 60px  0;
+    text-align: center;
+}
+.main-footer img{
+    width: 480px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons .icon{
+    background-color: #dddd;
+    font-size: 32px;
+    margin-right: 14px;
+    padding: 20px;
+    border-radius: 50%;
+    color: gray;
+
+}
+.main-footer p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+/* ------------------------------
+Responsive Media Query part 
+--------------------------------- */
+
+
+/* ----------------------------
+Responsive for mobile devices  
+-------------------------------*/
+
+@media only screen and (max-width:688px) {
+    .banner-left-content, .banner-image, .container, .players, .report-container, .news-main-section .main-footer{
+        width: 100%;
+    }
+    .banner, .players, .report-highlights, .recent-news{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .banner{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .banner-left-content{
+        text-align: center;
+    }
+    .banner-button a{
+        margin-bottom: 30px;
+    }
+    
+    .banner-image img{
+        width: 80%;
+    }
+    .players{
+        padding:  0 20px;
+    }
+    .report-highlights{
+        padding: 0 20px;
+    }
+    .report-title h1{
+        font-size: 25px;
+        
+    }
+    .report-title{
+        text-align: center;
+    }
+    .highlights-video{
+        width: 100%;
+        height: 300px;
+    }
+    .recent-news{
+        padding: 0 20px;
+    }
+    .main-footer img{
+        width: 40%;
+    }
+    .social-icons .icon{
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+    /*------------------------------
+     Responsive for Tablet devices  
+     -------------------------------*/
+
+    @media only screen and (min-width:688px) and (max-width: 992px) {
+        .banner-left-content, .banner-image, .container, .players, .report-container, .news-main-section .main-footer{
+            width: 100%;
+        }
+        .banner, .report-highlights{
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+        }
+        .players, .recent-news{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+        }
+        .banner{
+            text-align: center;
+            padding: 10px 0;
+        }
+        .banner-left-content{
+            text-align: center;
+        }
+        .banner-button a{
+            margin-bottom: 30px;
+        }
+
+        .banner-image img{
+            width: 70%;
+            max-height: 100%;
+        }
+        .players{
+            padding:  0 20px;
+        }
+        .report-title h1{
+            font-size: 25px;
+            
+        }
+        .report-highlights{
+            padding: 0 20px;
+        }
+        .report-title{
+            text-align: center;
+        }
+        .highlights-video{
+            width: 100%;
+            height: 400px;
+        }
+        .recent-news{
+            padding: 0 20px;
+        }
+        .main-footer{
+            text-align: center;
+        }
+        .main-footer img{
+            width: 50%;
+        }
+        .social-icons .icon{
+            font-size: 25px;
+            padding: 15px;
+        }
+    }
+
+/*----------------------------------
+ End website Style part, Thank You  
+ -----------------------------------*/
+
+ /* ------------------------------  Happy Codding With Programming Hero ----------------------------------*/
